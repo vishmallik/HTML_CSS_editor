@@ -135,7 +135,7 @@ html {
 }
 body {
   line-height: 1.5;
-  background-color: rgb(240, 128, 128);
+  background-color: rgb(247, 187, 187);
   font-family: Noto Sans, sans-serif;
 }
 a {
@@ -156,6 +156,7 @@ img {
   width: 100%;
   max-width: 70%;
   margin: 0 auto;
+  min-height: 82vh;
 }
 .wrap {
   flex-wrap: wrap;
@@ -216,4 +217,7 @@ iframe {
   right: 10px;
   font-size: 1rem;
   color: gray;
+}
+.fa-github:hover {
+  color: rgb(247, 187, 187) !important;
 }

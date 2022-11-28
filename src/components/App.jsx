@@ -1,5 +1,6 @@
 import React from "react";
 import Editor from "./Editor";
+import Footer from "./Footer";
 
 import Header from "./Header";
 import Preview from "./Preview";
@@ -15,26 +16,29 @@ export default class App extends React.Component {
   render() {
     let { xml, css } = this.state;
     return (
-      <div className="container">
-        <Header />
-        <div className="flex align-start">
-          <div>
-            <Editor
-              language="xml"
-              displayLabel="HTML"
-              value={xml}
-              handleChange={this.handleChange}
-            />
-            <Editor
-              language="css"
-              value={css}
-              displayLabel="CSS"
-              handleChange={this.handleChange}
-            />
+      <>
+        <div className="container">
+          <Header />
+          <div className="flex align-start">
+            <div>
+              <Editor
+                language="xml"
+                displayLabel="HTML"
+                value={xml}
+                handleChange={this.handleChange}
+              />
+              <Editor
+                language="css"
+                value={css}
+                displayLabel="CSS"
+                handleChange={this.handleChange}
+              />
+            </div>
+            <Preview text="OUTPUT" xml={xml} css={css} />
           </div>
-          <Preview text="OUTPUT" xml={xml} css={css} />
         </div>
-      </div>
+        <Footer />
+      </>
     );
   }
 }

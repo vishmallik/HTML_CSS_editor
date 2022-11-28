@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HTML_CSS_editor/static/css/main.806c4719.css",
+    "main.js": "/HTML_CSS_editor/static/js/main.af93e9f9.js",
+    "index.html": "/HTML_CSS_editor/index.html",
+    "main.806c4719.css.map": "/HTML_CSS_editor/static/css/main.806c4719.css.map",
+    "main.af93e9f9.js.map": "/HTML_CSS_editor/static/js/main.af93e9f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.806c4719.css",
+    "static/js/main.af93e9f9.js"
+  ]
+}
